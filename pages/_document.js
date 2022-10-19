@@ -5,27 +5,40 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <meta property='og:type' content='website' />
-          <meta name='twitter:type' content='website' />
-          <meta property='og:image:width' content='400' />
-          <meta property='og:image:height' content='400' />
-          <meta property='twitter:image:width' content='400' />
-          <meta property='twitter:image:height' content='400' />
-          <meta name='twitter:url' content='<%= frontendOrigin %>' />
-          <meta property='og:url' content='<%= frontendOrigin %>' />
-          <meta property='og:site_name' content='Service Club' />
-          <meta name='twitter:site_name' content='Service Club' />
-          <meta property='og:type' content='recruitment' />
-          <meta name='twitter:type' content='recruitment' />
-          <meta property='og:image' content='https://ibb.co/09SBW04' />
-          <meta name='twitter:card' content='summary' />
-          <meta name='twitter:image' content='https://ibb.co/09SBW04' />
-          <meta name='twitter:title' content='<%= ogTitle %>' />
-          <meta property='og:title' content='<%= ogTitle %>' />
+          <title>
+            Trymata | Digital Experience Insights, User Testing & Product
+            Analytics
+          </title>
+          <meta
+            name='description'
+            content='Unleash your best digital experience with Trymata user testing and product analytics tools. See how users behave and think on your websites and apps.'
+          />
 
+          <meta property='og:url' content='https://trymata.com/' />
           <meta property='og:type' content='website' />
+          <meta
+            property='og:title'
+            content='Trymata | Digital Experience Insights, User Testing & Product Analytics'
+          />
+          <meta
+            property='og:description'
+            content='Unleash your best digital experience with Trymata user testing and product analytics tools. See how users behave and think on your websites and apps.'
+          />
           <meta property='og:image' content='https://ibb.co/09SBW04' />
+
+          <meta name='twitter:card' content='summary_large_image' />
+          <meta property='twitter:domain' content='trymata.com' />
+          <meta property='twitter:url' content='https://trymata.com/' />
+          <meta
+            name='twitter:title'
+            content='Trymata | Digital Experience Insights, User Testing & Product Analytics'
+          />
+          <meta
+            name='twitter:description'
+            content='Unleash your best digital experience with Trymata user testing and product analytics tools. See how users behave and think on your websites and apps.'
+          />
           <meta name='twitter:image' content='https://ibb.co/09SBW04' />
+
           <body>
             <Main />
             <NextScript />
