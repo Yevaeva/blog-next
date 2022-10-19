@@ -1,19 +1,29 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
         <Head>
-          <meta property="og:title" content='TITLE OF YOUR WEBSITE'/>
-<meta property='og:image' content='https://ibb.co/09SBW04' />
+          <meta property='og:type' content='website' />
+          <meta name='twitter:type' content='website' />
+          <meta property='og:image:width' content='400' />
+          <meta property='og:image:height' content='400' />
+          <meta property='twitter:image:width' content='400' />
+          <meta property='twitter:image:height' content='400' />
+          <meta name='twitter:url' content='<%= frontendOrigin %>' />
+          <meta property='og:url' content='<%= frontendOrigin %>' />
+          <meta property='og:site_name' content='Service Club' />
+          <meta name='twitter:site_name' content='Service Club' />
+          <meta property='og:type' content='recruitment' />
+          <meta name='twitter:type' content='recruitment' />
+          <meta property='og:image' content='https://ibb.co/09SBW04' />
+          <meta name='twitter:card' content='summary' />
           <meta name='twitter:image' content='https://ibb.co/09SBW04' />
-<meta property="og:description" content='DESCRIPTION OF YOUR SITE'/>
-<meta property="og:url" content='https://blog-next-phi.vercel.app/'/>
-<meta property='og:image:width' content='1200' />
-<meta property='og:image:height' content='627' />
+          <meta name='twitter:title' content='<%= ogTitle %>' />
+          <meta property='og:title' content='<%= ogTitle %>' />
 
-<meta property="og:type" content='website'/>
+          <meta property='og:type' content='website' />
           <meta property='og:image' content='https://ibb.co/09SBW04' />
           <meta name='twitter:image' content='https://ibb.co/09SBW04' />
           <body>
@@ -27,4 +37,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default MyDocument;
